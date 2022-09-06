@@ -106,14 +106,14 @@ if ! get(g:, "is_pythonsense_suppress_keymaps", 0) && ! get(g:, "is_pythonsense_
     endif
 
     if !hasmapto('<Plug>PythonsenseOuterFunctionTextObject')
-        vmap <buffer> af <Plug>(PythonsenseOuterFunctionTextObject)
-        omap <buffer> af <Plug>(PythonsenseOuterFunctionTextObject)
-        sunmap <buffer> af
+        vmap <buffer> am <Plug>(PythonsenseOuterFunctionTextObject)
+        omap <buffer> am <Plug>(PythonsenseOuterFunctionTextObject)
+        sunmap <buffer> am
     endif
     if !hasmapto('<Plug>PythonsenseInnerFunctionTextObject')
-        vmap <buffer> if <Plug>(PythonsenseInnerFunctionTextObject)
-        omap <buffer> if <Plug>(PythonsenseInnerFunctionTextObject)
-        sunmap <buffer> if
+        vmap <buffer> im <Plug>(PythonsenseInnerFunctionTextObject)
+        omap <buffer> im <Plug>(PythonsenseInnerFunctionTextObject)
+        sunmap <buffer> im
     endif
 
     if !hasmapto('<Plug>PythonsenseOuterDocStringTextObject')
